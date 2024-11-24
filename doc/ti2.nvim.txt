@@ -7,3 +7,52 @@ Autor: Tiago.Cipriano <tiagoandroidti@gmail.com>
 Versão: 0.0.1
 Licença: - 
 
+===============================================================================
+Conteúdo                                                         *ti2-conteudo*
+
+01. Introdução.................................................|ti2-introducao|
+02. Instalação.................................................|ti2-instalacao|
+
+
+===============================================================================
+Introdução                                                     *ti2-introducao*
+
+Este plugin é utilizado como em partes como uma documentação pessoal de con-
+figuações que utilizo no neovim, em partes como uma definição do meu ambiente
+de desenvolvimento. O público alvo número 01 deste projeto sou eu no futuro,
+mas se você notar que o mesmo possa ser útil para você, fique avontade para
+utiliza-lo.
+
+===============================================================================
+Instalação                                                     *ti2-instalacao*
+
+A instalação deste plugin tende a seguir o padrão do neovim, porém eu gosto
+do plugin junegunn/vim-plug [github](https://github.com/junegunn/vim-plug) no
+neovim para que o mesmo funcione de forma adequada copie o conteúdo do repo
+
+plug.vim para
+
+~/.config/nvim/autoload/plug.vim
+
+Eu também estou fazendo o exercicio de tentar manter todos as configurações o
+mais próximo possivel apenas utilizando a linguagem lua então em 
+
+~/.config/nvim/init.lua
+
+adicione
+
+local vim = vim
+local Plug = vim.fn['plug#']
+
+vim.call('plug#begin')
+Plug('tiagoti/ti2.nvim')
+vim.call('plug#end')
+
+
+===============================================================================
+
+*ti2*
+*ti2-conteudo*
+*ti2-instalacao*
+*ti2-introducao*
+*ti2.nvim.txt*

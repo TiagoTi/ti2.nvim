@@ -1,0 +1,9 @@
+*ti2.nvim.txt*    Plugin em Lua para Neovim
+
+===============================================================================
+ti2                            *ti2*
+
+Autor: Tiago.Cipriano <tiagoandroidti@gmail.com>
+Versão: 0.0.1
+Licença: - 
+

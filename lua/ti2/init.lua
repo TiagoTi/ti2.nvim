@@ -1,31 +1,4 @@
 local vim = vim
-local Plug = vim.fn['plug#']
-
-vim.o.exrc = true
-
-vim.call('plug#begin')
--- Dev Version
-Plug('diepm/vim-rest-console')
-Plug('preservim/nerdtree')
-Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim')
-Plug('junegunn/fzf', { ['dir'] = '~/.fzf', ['do'] = './install --all' })
-Plug('nvim-tree/nvim-web-devicons')
-Plug('vim-airline/vim-airline')
-Plug('vim-airline/vim-airline-themes')
-Plug('sbdchd/neoformat')
-Plug('editorconfig/editorconfig-vim')
-Plug('tpope/vim-surround')
-Plug('sheerun/vim-polyglot')
-Plug('ryanoasis/vim-devicons')
-Plug('jmcantrell/vim-virtualenv')
-Plug('xolox/vim-notes')
-Plug('tpope/vim-obsession')
-Plug('xolox/vim-misc')
--- Plug('tiagoti/ti2.nvim')
-Plug('git@gitlab.luizalabs.com:tiago.cipriano/tribo-comercial-template-backend.nvim.git')
-Plug('git@gitlab.luizalabs.com:tiago.cipriano/tribo-comercial-template-frontend.nvim.git')
-vim.call('plug#end')
 
 vim.cmd([[
 let g:airline_theme='simple' " <theme> is a valid theme name
@@ -102,5 +75,3 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 tnoremap <C-v> <C-\><C-n>
 ]])
 
-require("plugins.my-local-py").setup()
--- https://tuckerchapman.com/
